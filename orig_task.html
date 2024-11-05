@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Решение оригинальной алгоритмической задачи</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Домашняя страница</a></li>
+                <li><a href="index.html#order">Заказать книги</a></li>
+                <li><a href="fiction.html">Художественная литература</a></li>
+                <li><a href="philosophy.html">Философия</a></li>
+                <li><a href="technical.html">Техническая литература</a></li>
+                <li><a href="popular.html">Самые популярные книги на сайте</a></li>
+                <li><a href="https://ilibrary.ru/" target="_blank">Электронная библиотека</a></li>
+                <li><a href="feedback.html"><img src="images.png" height="30px" width="50px"></a></li>
+                <li><a href="pasport.html">DOM_JS. Считываем информацию из DOM</a></li>
+                <li><a href="change.html">Изменяем кириллицу на латиницу по клику</a></li>
+                <li><a href="task.html">Решение алгоритмической задачи</a></li>
+                <li><a href="orig_task.html"><b>Решение оригинальной алгоритмической задачи</b></a></li>
+            </ul>
+        </nav>
+        <p align="center"><b>Оригинальная алгоритмическая задача</b></p>
+        <p>Даны катеты прямоугольного прямоугольника (a и b). Найти его гипотенузу.</p>
+        <form action="https://www.bing.com/search?" id="UserOrder" name="UserOrder" target="_blank">
+            <input type="hidden" name="q" value="search">
+            <input type="hidden" name="condition" value="Даны катеты прямоугольного прямоугольника (a и b). Найти его гипотенузу.">
+            <p>a: <input type="number" name="a" id="a" value=1 min=1></p>
+            <p>b: <input type="number" name="b" id="b" value=1 min=1></p>
+            <input type="button" id="calculate" value="Вычислить">
+            <p>Результат: <input type="text" name="result" id="result" value="Не определен"></p>
+            <input type="submit" name="submit" value="Отправить">
+        </form>
+        <script src="orig_task_code.js"></script>
+    </body>
+</html>

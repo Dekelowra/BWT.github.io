@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Домашняя страница</title>
+    </head>
+    <body>
+        <p align="center"><b>КНИЖНЫЙ МАГАЗИН "МИР КНИГИ"</b></p>
+        <hr color="red">
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Домашняя страница</b></a></li>
+                <li><a href="index.html#order">Заказать книги</a></li>
+                <li><a href="fiction.html">Художественная литература</a></li>
+                <li><a href="philosophy.html">Философия</a></li>
+                <li><a href="technical.html">Техническая литература</a></li>
+                <li><a href="popular.html">Самые популярные книги на сайте</a></li>
+                <li><a href="https://ilibrary.ru/" target="_blank">Электронная библиотека</a></li>
+                <li><a href="feedback.html"><img src="images.png" height="30px" width="50px"></a></li>
+                <li><a href="pasport.html">DOM_JS. Считываем информацию из DOM</a></li>
+                <li><a href="change.html">Изменяем кириллицу на латиницу по клику</a></li>
+                <li><a href="task.html">Решение алгоритмической задачи</a></li>
+                <li><a href="orig_task.html">Решение оригинальной алгоритмической задачи</a></li>
+            </ul>
+        </nav>
+        <hr color="red">
+        <p>Добро пожаловать в книжный магазин "Мир Книги". Здесь Вы найдете разнообразные книги по приемлемым ценам.</p>
+        <p>Для того, чтобы найти интересующую Вас книгу, воспользуйтесь навигацией по тематическим разделам.</p>
+        <img src="library.jpg" width="1000px">
+        <h1 id="order">Здесь Вы можете заказать книги.</h1>
+        <form action="https://www.bing.com/search?" id="UserOrder" name="UserOrder" target="_blank">
+            <input type="hidden" name="q" value="search">
+            <p>Фамилия: <input type="text" name="last_name" value="Лушников"></p>
+            <p>Имя: <input type="text" name="first_name" value="Андрей"></p>
+            <p>Название книги <input type="text" name="book" value="Братья Карамазовы"></p>
+            <p>Количество экземпляров <input type="number" name="amount" min=1 value=1></p>
+            <p>Выберите доступный для доставки город: 
+                <input type="radio" name="place" value="Москва" checked>Москва 
+                <input type="radio" name="place" value="Санкт-Петербург">Санкт-Петербург 
+                <input type="radio" name="place" value="Нижний Новгород">Нижний Новгород 
+                <input type="radio" name="place" value="Пермь">Пермь 
+            </p>
+            <p>Выберите удобную для Вас дату доставки: <input type="date" name="date" value="2024-11-06"></p>
+            <p>Доставить в подарочной упаковке: <input type="checkbox" name="present" value="yes" checked></p>
+            <p>Введите код, по которому Вы сможете забрать книгу: <input type="password" name="password" value="123"></p>
+            <input type="hidden" name="UserID" value="6832">
+            <input type="submit" name="submit" value="Отправить">
+        </form>
+    </body>
+</html>
